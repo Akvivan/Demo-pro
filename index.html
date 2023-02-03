@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Zomato</title>
+    <link rel="stylesheet" href="style.css" />
+    <style>
+      /*css reset>*/
+      body {
+        color: white;
+        background-image: url("img/bg.png");
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-position: center;
+        justify-content: center;
+        align-items: center;
+        width: 100%;
+        height: 10%;
+      }
+      /*.header {
+        color: red;
+      }*/
+      .left {
+        display: inline-block; 
+        /* border: 2px solid red;*/
+         padding: 40px 40px;
+      }
+      .left a {
+        text-decoration: none;
+        color: white;
+      }
+      .right {
+        position: absolute;
+        right: 34px;
+        top: 22px;
+        display: inline-block;
+        /* border: 2px solid red; */
+        text-decoration: none;        
+      }
+      .right ul li {
+        float: left;
+        margin-right: 30px;
+        padding: 15px;
+        font-size: 20px;
+      }
+      .right ul li a {
+        text-decoration: none;
+        color: white;
+      }
+
+      .logo {
+        display: block;
+        margin-left: auto;
+        margin-right: auto;
+        width: 20%;
+      }
+      .description {
+        font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
+        font-weight: lighter;
+        font-size: 40px;
+        text-align: center;
+        color: white;
+      }
+      .container .search-bar {
+        display: flex;
+        margin-left: auto;
+        margin-right: auto;
+        align-items: center;
+        justify-items: center;
+      }
+      .search-bar {
+        width: 100%;
+        max-width: 700px;
+        background: rgba(255, 255, 255, 0.2);
+        display: flex;
+        align-items: center;
+        border-radius: 60px;
+        padding: 10px 20px;
+        backdrop-filter: blur(4px) saturate(180%);
+      }
+      .search-bar input {
+        background: transparent;
+        flex: 1;
+        border: 0;
+        outline: none;
+        padding: 24px 20px;
+        font-size: 20px;
+        color: #cac7ff;
+        border-radius: 30px;
+        
+      }
+      ::placeholder {
+        color: #cac7ff;
+        
+      }
+      .search-bar button img {
+        width: 25px;
+      } 
+      .search-bar button {
+        border: 0;
+        border-radius: 50%;
+        width: 60px;
+        height: 60px;
+        background: #58629b;
+        cursor: pointer;
+      }
+     </style> 
+  </head>
+  <body>
+    <header class="header">
+      <div class="left">
+        <a href="https://www.zomato.com/mobile">Get the App</a>
+      </div>
+      <div class="right">
+        <ul>
+          <li><a href="#">Investor Relation</a></li>
+          <li><a href="#">Add Resturant</a></li>
+          <li><a href="Log in.html">LogIn</a></li>
+          <li><a href="Sign up.html"> SingUp</a></li>
+        </ul>
+      </div>
+    </header>
+    <div class="logo">
+      <img src="img/zomato.png" alt="#" height="60px" width="300px" />
+    </div>
+    <h1 class="description">
+      Discover the best food & drinks In
+      <span class="next-line">Delhi NCR</span>
+    </h1>
+    <div class="container">
+      <form action="https://www.zomato.com/" method="get" class="search-bar">
+        <input
+          type="text"
+          placeholder="Search for resturant, cuisine or a dish"
+          name="q"
+        />
+        <button type="submit"><img src="img/search.png" alt="#" /></button>
+      </form>
+    </div>
+  </body>
+</html>
